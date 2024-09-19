@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic}  % Style options: casual, classic, banking, oldstyle, fancy
+\moderncvcolor{orange}     % Color options: blue, orange, green, red, purple, grey, black
+
+% Character encoding
+\usepackage[utf8]{inputenc}  % Unicode support
+
+% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+% Personal Information
+\name{Jacob}{Ming Xing Runyan}
+\title{Software Engineer} % Job title/career
+\address{816 Dona Avenue}{Sunnyvale, CA 94087} % Address
+\phone[mobile]{+1~(669)~224~9483} % Mobile phone
+\email{runyanjake@gmail.com} % Email address
+\homepage{jake.runyan.dev} % Website
+\social[linkedin]{linkedin.com/in/runyanjake}
+\social[github]{github.com/runyanjake}
+
+% Start of document
+\begin{document}
+
+% Title (name) on top of the resume
+\makecvtitle
+
+% Section: Experience
+\section{Experience}
+
+\cventry{2018--Present}{Software Engineer}{Egnyte}{Mountain View, CA}{\textit{Full-time}}{
+\begin{itemize}
+    \item Deployed and maintained an Nginx instance as a proof of concept for an edge API Caching solution.
+    \item Designed a storage for Windows alternate data streams leveraging Firestore \& GCS for a coauthoring collaboration with Microsoft. Project sees continued usage as part of the modern coauthoring solution.
+    \item Contributed to CMMC compliance efforts via refactoring of BigTable clients across the monolith.
+    \item 1 of 2 engineers on a backend unification effort to combine multiple user management systems across Egnyte Connect \& Egnyte Protect.
+    \item Collaboration within a small team supporting infrastructure in the US time zone.
+    \item Triage of incidents and support requests for monitored services. Experience using logging (Kibana) and monitoring (OpenTSDB/Prometheus \& Grafana) to debug issues with services and distributed systems.
+\end{itemize}}
+
+% Section: Education
+\section{Education}
+
+\cventry{2015--2018}{Bachelor of Science in Computer Science}{University of California, Santa Cruz}{}{}{
+Completed a 4 year engineering degree ahead of schedule in 3 years at Baskin School of Engineering.
+Relevant coursework: Algorithms, Data Structures, Databases, Operating Systems, AI.}
+
+% Section: Skills
+\section{Skills}
+\cvitem{Languages}{Java, Python, C/C++, Web}
+\cvitem{Technologies}{Spring, Spring Boot, Docusaurus, Flask, ComfyUI}
+\cvitem{Tools}{Git, Unix tooling, }
+\cvitem{Databases}{MySQL, PostgreSQL}
+\cvitem{Cloud}{Google Cloud, some AWS}
+
+% Section: Projects
+\section{Projects}
+\cvitem{Web Development}{\textbf{Multi-Framework:} Personal website and recipe site using Meta's Docusaurus web framework, project homepages using pure HTML/CSS, and Flask projects, all self hosted. Experience with DNS and Traefik load balancer/proxy.}
+\cvitem{Systems \& Hardware}{\textbf{Homelabbing:} Multiple iterations of a personal homelab, serving utilities, monitoring, my dev environment, webpages, and home automation software.}
+\cvitem{Supplemental Projects}{\textbf{IOS App Development:} Creating small utilities including a jornaling app to track and improve one's productive spend of time.}
+
+% Section: Certifications
+\section{Certifications}
+\cvitem{2023}{AWS Certified Solutions Architect}
+\cvitem{2022}{Certified Kubernetes Administrator (CKA)}
+
+% Section: Languages
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{Native proficiency}
+
+% End of document
+\end{document}
+
