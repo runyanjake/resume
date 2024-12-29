@@ -31,44 +31,43 @@
 
 \cventry{2018--Present}{Software Engineer}{Egnyte}{Mountain View, CA}{\textit{Full-time}}{
 \begin{itemize}
-    \item Deployed and maintained an Nginx instance as a proof of concept for an edge API Caching solution.
-    \item Designed a storage for Windows alternate data streams leveraging Firestore \& GCS for a coauthoring collaboration with Microsoft. Project sees continued usage as part of the modern coauthoring solution.
-    \item Contributed to CMMC compliance efforts via refactoring of BigTable clients across the monolith.
-    \item 1 of 2 engineers on a backend unification effort to combine multiple user management systems across Egnyte Connect \& Egnyte Protect.
-    \item Collaboration within a small team supporting infrastructure in the US time zone.
-    \item Triage of incidents and support requests for monitored services. Experience using logging (Kibana) and monitoring (OpenTSDB/Prometheus \& Grafana) to debug issues with services and distributed systems.
+    \item \textbf{API Caching}: 
+    Implemented Nginx caching on metadata of large folder listings, reducing X\% load on a heavily loaded central Memcache cluster.
+    Identified the noisy internal caller, request patterns, and provided a solution tailored to fix the problem case,
+    working with multi national teams to test, scale, and maintain the solution.
+    \item \textbf{Service Design/Deployment}: 
+    Leveraged Google Cloud Storage (GCP) to store alternate file streams from Microsoft (MS) products, a component of our coauthoring solution.
+    Contributed to the rapid adoption of the solution, which became a leader in several internal calls, and noted value add for marketing.
+    In an organization actively switching to microservices, was one leading project to deploy as a standalone new service. Documented steps and pitfalls for those following.
+    \item \textbf{Compliance}: 
+    Contributed to multiple teams' efforts to ensure CMMC compliance for securing the usage of GCP resources. 
+    Supported the BigTable client conversion to Implicit Authentication, aligning with compliance standards.
+    Use of Semgrep tooling to manage, fix, and report security alerts.
+    \item \textbf{Work with Legacy Code}: 
+    One of two backend engineers providing internal support for the unification of the Collaborate and Secure \& Govern projects under the "Platform" rebranding. 
+    Contributed to the unification of the internal user management service, streamlining processes across projects.
+    \item\textbf{Support}: 
+    Triage of incidents, and support/feature requests for monitored services. Experience using logging (Kibana) and monitoring (OpenTSDB/Prometheus/Grafana) to debug issues.
 \end{itemize}}
 
 % Section: Education
 \section{Education}
 
-\cventry{2015--2018}{Bachelor of Science in Computer Science}{University of California, Santa Cruz}{}{}{
-Completed a 4 year engineering degree ahead of schedule in 3 years at Baskin School of Engineering.
-Relevant coursework: Algorithms, Data Structures, Databases, Operating Systems, AI.}
+\cventry{2015--2018}{Bachelor of Science, Computer Science}{University of California, Santa Cruz}{}{}{
+Graduated ahead of schedule in 3 years from the Baskin School of Engineering. 
+Relevant coursework: Algorithms, Data Structures, Databases, Operating Systems, Artificial Intelligence.}
 
 % Section: Skills
 \section{Skills}
-\cvitem{Languages}{Java, Python, C/C++, Web}
-\cvitem{Technologies}{Spring, Spring Boot, Docusaurus, Flask, ComfyUI}
-\cvitem{Tools}{Git, Unix tooling, }
-\cvitem{Databases}{MySQL, PostgreSQL}
-\cvitem{Cloud}{Google Cloud, some AWS}
+\cvitem{Java}{5+ years developing Spring/Spring Boot projects in Maven.}
+\cvitem{Python}{5+ years use for writing tests, as a scripting language, and for standalone projects.}
+\cvitem{Cloud}{Google Cloud Platform, some AWS.}
+\cvitem{Machine Learning/AI}{Basic knowledge of perceptron/NN architecture, some experience with Tensorflow/PyTorch. Proficient using GenAI in personal/professional work (ComfyUI, LMStudio, etc)}
+\cvitem{Misc}{Other languages include C/C++/Lua. Experience with a few SQL/NoSQL types.}
 
 % Section: Projects
 \section{Projects}
-\cvitem{Web Development}{\textbf{Multi-Framework:} Personal website and recipe site using Meta's Docusaurus web framework, project homepages using pure HTML/CSS, and Flask projects, all self hosted. Experience with DNS and Traefik load balancer/proxy.}
-\cvitem{Systems \& Hardware}{\textbf{Homelabbing:} Multiple iterations of a personal homelab, serving utilities, monitoring, my dev environment, webpages, and home automation software.}
-\cvitem{Supplemental Projects}{\textbf{IOS App Development:} Creating small utilities including a jornaling app to track and improve one's productive spend of time.}
-
-% Section: Certifications
-\section{Certifications}
-\cvitem{2023}{AWS Certified Solutions Architect}
-\cvitem{2022}{Certified Kubernetes Administrator (CKA)}
-
-% Section: Languages
-\section{Languages}
-\cvitemwithcomment{English}{Fluent}{Native proficiency}
-
+\cvitem{Web Development}{\textbf{Frontend:} Web development for a variety of projects, in a variety of frameworks including React, Docusaurus, Flask, and plain old html/css/js.}
+\cvitem{Systems \& Hardware}{\textbf{Homelabbing}: Multiple iterations of a personal homelab (see: r/homelab), used for remote computation, video rendering jobs, and hosting personal projects/websites. Experience with DNS settings, storage solutions (ZFS RAIDz1) and Traefik/Nginx load balancing.}
 % End of document
 \end{document}
-
