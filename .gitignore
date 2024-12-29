@@ -1,6 +1,6 @@
-jacob-runyan-resume.fdb_latexmk
-jacob-runyan-resume.log
-jacob-runyan-resume.aux
-jacob-runyan-resume.fls
-jacob-runyan-resume.out
-jacob-runyan-resume.synctex.gz
+*.fdb_latexmk
+*.log
+*.aux
+*.fls
+*.out
+*.synctex.gz
